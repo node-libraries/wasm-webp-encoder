@@ -1,0 +1,24 @@
+{
+  "name": "@node-libraries/wasm-webp-encoder",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "start": "ts-node test",
+    "build": "tsc -b",
+    "lint:fix": "eslint --fix src/ && prettier -w src"
+  },
+  "dependencies": {
+    "worker-lib": "^1.0.1"
+  },
+  "devDependencies": {
+    "@types/node": "^16.11.10",
+    "@typescript-eslint/eslint-plugin": "^5.4.0",
+    "@typescript-eslint/parser": "^5.4.0",
+    "eslint": "^8.3.0",
+    "eslint-config-prettier": "^8.3.0",
+    "prettier": "^2.5.0",
+    "ts-node": "^10.4.0",
+    "typescript": "^4.5.2"
+  }
+}
