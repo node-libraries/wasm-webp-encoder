@@ -1,6 +1,6 @@
 /* eslint-disable no-unused-vars */
 import { initWorker } from 'worker-lib';
-import webp, { ModuleType } from './webp';
+import webp, { ModuleType } from './webp.js';
 
 let webpModule: ModuleType;
 

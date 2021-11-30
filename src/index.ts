@@ -1,10 +1,10 @@
 /* eslint-disable no-unused-vars */
 import { createWorker } from 'worker-lib';
-import type { WorkerWebp } from './worker';
+import type { WorkerWebp } from './worker.js';
 
 const execute = createWorker<WorkerWebp>(
   () => new Worker(new URL('./worker', import.meta.url)),
-  5 // Maximum parallel number
+  4 // Maximum parallel number
 );
 
 export const encode: {
@@ -15,3 +15,5 @@ export const encode: {
     ? execute('encode', data.data, data.width, data.height, a || 100)
     : execute('encode', data, a as number, b as number, c || 100);
 };
+
+export default true;

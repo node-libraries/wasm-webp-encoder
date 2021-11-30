@@ -2,13 +2,18 @@
 
 # Overview
 
-Provides the ability to encode WebP using WebAssembly and WebWorker.
-Up to 5 parallel threads.
+Provides the ability to encode WebP using WebAssembly and WebWorker.  
+Up to 4 parallel threads.
 
 # types
 
-encode(data: BufferSource, width: number, height: number, quality?: number): Promise<Uint8Array | null>;
-encode(data: ImageData, quality?: number): Promise<Uint8Array | null>;
+```ts
+encode(data: BufferSource, width: number, height: number, quality?: number): Promise<Uint8Array | null>
+```
+
+```ts
+encode(data: ImageData, quality?: number): Promise<Uint8Array | null>
+```
 
 # usage
 

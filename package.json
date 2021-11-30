@@ -1,24 +1,47 @@
 {
   "name": "@node-libraries/wasm-webp-encoder",
-  "version": "1.0.0",
-  "main": "index.js",
+  "description": "WebAssembly webp encoder with WebWorker support.",
+  "version": "1.0.2",
+  "main": "dist/index.js",
   "license": "MIT",
   "scripts": {
     "start": "ts-node test",
     "build": "tsc -b",
+    "build:wasm": "make",
     "lint:fix": "eslint --fix src/ && prettier -w src"
   },
   "dependencies": {
     "worker-lib": "^1.0.1"
   },
   "devDependencies": {
-    "@types/node": "^16.11.10",
-    "@typescript-eslint/eslint-plugin": "^5.4.0",
-    "@typescript-eslint/parser": "^5.4.0",
+    "@types/node": "^16.11.11",
+    "@typescript-eslint/eslint-plugin": "^5.5.0",
+    "@typescript-eslint/parser": "^5.5.0",
     "eslint": "^8.3.0",
     "eslint-config-prettier": "^8.3.0",
     "prettier": "^2.5.0",
     "ts-node": "^10.4.0",
     "typescript": "^4.5.2"
-  }
+  },
+  "type": "module",
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/node-libraries/wasm-webp-encoder.git"
+  },
+  "author": "SoraKumo",
+  "bugs": {
+    "url": "https://github.com/node-libraries/wasm-webp-encoder/issues"
+  },
+  "homepage": "https://github.com/node-libraries/wasm-webp-encoder#readme",
+  "keywords": [
+    "webp",
+    "encode",
+    "wasm",
+    "worker",
+    "WebAssembly",
+    "WebWorker"
+  ]
 }
