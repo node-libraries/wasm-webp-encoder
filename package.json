@@ -1,7 +1,7 @@
 {
   "name": "@node-libraries/wasm-webp-encoder",
   "description": "WebAssembly webp encoder with WebWorker support.",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "main": "dist/index.js",
   "license": "MIT",
   "scripts": {

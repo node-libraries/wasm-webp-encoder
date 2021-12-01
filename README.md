@@ -23,3 +23,7 @@ import { encode } from '@node-libraries/wasm-webp-encoder';
 const encodedValue = await encode(ctx.getImageData(0, 0, img.width, img.height));
 const encodedValue2 = await encode(arrayBuffer, width, height);
 ```
+
+# Sample when used with Next.js
+
+- https://github.com/SoraKumo001/next-webp
